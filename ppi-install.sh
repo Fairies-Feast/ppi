@@ -28,12 +28,13 @@ else
     exit 1
 fi
 
-rm ppi-setup.py
-
-curl https://ppi-source.pages.dev/ppi-setup.py >> ppi-setup.py
+rm ppi-app.py
+unalias ppi
+alias ppi="cd ~ && python3 ppi-app.py"
+curl https://ppi-source.pages.dev/ppi-app.py >> ppi-app.py
 apt install python3.13-venv
 python3 -m venv venv
 source venv/bin/activate
 pip install requests
 clear
-python ppi-setup.py
+python ppi-app.py

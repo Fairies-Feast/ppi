@@ -1,3 +1,4 @@
+# Warning! This version is OUTDATED. Reinstall PPI and delete this file
 import requests
 import os
 import time

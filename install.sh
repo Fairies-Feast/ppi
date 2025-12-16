@@ -1,10 +1,11 @@
 echo "Welcome to the PPI installer!"
 echo "This software is provided As Is. We are not responsible for any malfunction or problem caused by this software"
-echo "Warning! This PPI instance will be installed in your current folder! If you want to move it to a different folder, you must uninstall and reinstall PPI."
+echo "WARNING! PPI will be installed in the ~ folder."
 echo "When you are ready to continue, press ENTER."
 read
 clear
 echo "This tool will attempt to install Python, if not already installed."
+cd ~
 if command -v apt >/dev/null; then
     apt update
     apt install -y python3 curl

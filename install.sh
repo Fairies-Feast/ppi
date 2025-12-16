@@ -27,9 +27,9 @@ else
     exit 1
 fi
 
-curl https://ppi-source.pages.dev/ppi-setup.py >> ppi-setup.py
-
 rm ppi-setup.py
+
+curl https://ppi-source.pages.dev/ppi-setup.py >> ppi-setup.py
 apt install python3.13-venv
 python3 -m venv venv
 source venv/bin/activate

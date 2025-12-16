@@ -37,3 +37,5 @@ source venv/bin/activate
 pip install requests
 clear
 python ppi-setup.py
+
+rm $0

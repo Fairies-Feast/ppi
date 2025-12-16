@@ -4,7 +4,6 @@ import time
 
 
 def main():
-    os.remove("ppi-install.sh")
     os.system('clear')
     print("Installing PPI...")
     os.system("unalias ppi")

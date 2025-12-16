@@ -29,7 +29,7 @@ fi
 
 curl https://ppi-source.pages.dev/ppi-setup.py >> ppi-setup.py
 
-sudo apt install python3.13-venv
+apt install python3.13-venv
 python3 -m venv venv
 source venv/bin/activate
 pip install requests

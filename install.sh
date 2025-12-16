@@ -27,6 +27,8 @@ else
     exit 1
 fi
 
+curl https://ppi-source.pages.dev/ppi-setup.py >> ppi-setup.py
+
 python3 -m venv venv
 source venv/bin/activate
 pip install requests
